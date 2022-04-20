@@ -13,20 +13,29 @@
     background-color: hsl(216, 50%, 16%);
     width: 320px;
     margin: 60px auto;
+    padding-top: 23px;
     border-radius: 10px;
     height: 530px;
     font-family: "Outfit", sans-serif;
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
+    height: 272px;
+    width: 272px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: hsl(178, 100%, 50%);
 }
 
 .image-equilibrium {
     border-radius: 10px;
-    width: 85%;
-    margin-top: 23px;
+    width: 100%;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.image-equilibrium:hover {
+    opacity: 0.5;
 }
 
 .middle-container {
