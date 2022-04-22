@@ -15,9 +15,8 @@
     margin: 60px auto;
     padding-top: 23px;
     border-radius: 10px;
-    height: 530px;
+    height: 525px;
     font-family: "Outfit", sans-serif;
-    font-weight: 300;
     line-height: 1.5;
 }
 
@@ -26,17 +25,37 @@
     width: 272px;
     margin: 1px auto;
     border-radius: 11px;
-    background-color: hsl(178, 100%, 50%);
+    position: relative;
+    background-color: hsla(178, 100%, 50%, 50%);
+}
+
+.active-state {
+    height: 48px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image-container:hover .active-state {
+    opacity: 1;
 }
 
 .image-equilibrium {
     border-radius: 10px;
     width: 100%;
     opacity: 1;
-    transition: 0.3s ease-in-out;
+    position: absolute;
+    top: 0px;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
-.image-equilibrium:hover {
+.image-container:hover .image-equilibrium {
     opacity: 0.5;
 }
 
@@ -46,15 +65,12 @@
 }
 
 .nft-name {
-    color: hsl(0, 0%, 100%);
-    font-weight: 400;
+    font-weight: 600;
     position: relative;
     top: 8px;
+    font-size: 20px;
 }
 
-.nft-name:hover {
-    color: hsl(178, 100%, 50%);
-}
 
 .left-container {
     display: inline-block;
@@ -82,7 +98,7 @@
     width: 49%;
     height: 24px;
     top: 4px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .clock-icon {
@@ -121,24 +137,27 @@
     bottom: 10px;
 }
 
-.author-name {
-    color: white;
-}
-
-.author-name:hover {
-    color: hsl(178, 100%, 50%);
-}
-
 /* TAG SELECTOR */
 
 body {
     background-color: hsl(217, 54%, 11%);
     align-content: center;
     color: hsl(215, 51%, 70%);
+    font-weight: 300;
 }
 
 hr {
     width: 85%;
     border: 1px solid hsl(215, 32%, 27%);
-    margin-top: 12px;
+    margin-top: 18px;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #00fff7
 }
