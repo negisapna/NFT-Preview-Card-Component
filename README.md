@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/negisapna/NFT-Preview-Card-Component](https://your-solution-url.com)
-- Live Site URL: [https://negisapna.github.io/NFT-Preview-Card-Component/](https://your-live-site-url.com)
+- Solution URL: [https://github.com/negisapna/NFT-Preview-Card-Component](https://github.com/negisapna/NFT-Preview-Card-Component)
+- Live Site URL: [https://negisapna.github.io/NFT-Preview-Card-Component/](https://negisapna.github.io/NFT-Preview-Card-Component/)
 
 ## My process
 
